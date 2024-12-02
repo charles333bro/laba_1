@@ -1,0 +1,3 @@
+C:/git/laba_1/laba_5/build/CMakeFiles/example.dir
+C:/git/laba_1/laba_5/build/CMakeFiles/ALL_BUILD.dir
+C:/git/laba_1/laba_5/build/CMakeFiles/ZERO_CHECK.dir

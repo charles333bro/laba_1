@@ -1,0 +1,10 @@
+^C:\GIT\LABA_1\LABA_6\#4\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/git/laba_1/laba_6/#4" "-BC:/git/laba_1/laba_6/#4/build" --check-stamp-file "C:/git/laba_1/laba_6/#4/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
