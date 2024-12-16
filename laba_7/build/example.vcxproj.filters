@@ -4,6 +4,9 @@
     <ClCompile Include="C:\git\laba_1\laba_7\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\git\laba_1\laba_7\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\git\laba_1\laba_7\CMakeLists.txt" />

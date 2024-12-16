@@ -1,18 +1,8 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include "utils.h"
 
 using namespace std;
-
-bool containsDigitEight(int num) {
-    while (num != 0) {
-        if (num % 10 == 8) {
-            return true;
-        }
-        num /= 10;
-    }
-    return false;
-}
 
 int main() {
     int n;
@@ -27,33 +17,11 @@ int main() {
         }
     }
 
-    int maxElement = matrix[0][0];
-    int minElement = matrix[0][0];
-
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            if (matrix[i][j] > maxElement) {
-                maxElement = matrix[i][j];
-            }
-            if (matrix[i][j] < minElement) {
-                minElement = matrix[i][j];
-            }
-        }
-    }
+    int maxElement = findMaxElement(matrix);
+    int minElement = findMinElement(matrix);
 
     if (maxElement + minElement == 0) {
-        for (int i = 0; i < n; ++i) {
-            bool hasEight = false;
-            for (int j = 0; j < n; ++j) {
-                if (containsDigitEight(matrix[i][j])) {
-                    hasEight = true;
-                    break;
-                }
-            }
-            if (hasEight) {
-                sort(matrix[i].begin(), matrix[i].end());
-            }
-        }
+        sortRowsWithEight(n, matrix);
     }
 
     cout << "Обновленная матрица: " << endl;
