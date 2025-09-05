@@ -9,7 +9,7 @@ int main() {
     std::cout << "Размер: " << sizeof(int) << " байт\n";
     std::cout << "Минимум: " << std::numeric_limits<int>::min() << "\n";
     std::cout << "Максимум: " << std::numeric_limits<int>::max() << "\n";
-    std::cout << "Пример арифметической операции 5 + 10 = " << (5 + 10) << "\n\n";
+    std::cout << "Пример ,FRFYJDF ;SHE[F арифметической операции 5 + 10 = " << (5 + 10) << "\n\n";
 
     std::cout << "Тип: unsigned int\n";
     std::cout << "Размер: " << sizeof(unsigned int) << " байт\n";
